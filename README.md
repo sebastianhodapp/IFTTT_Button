@@ -1,2 +1,2 @@
 # IFTTT_Button
-Wifi Button to trigger IFTTT receipts.
+<http://sebastianhodapp.github.io/IFTTT_Button/>
