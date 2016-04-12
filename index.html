@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ifttt Button by sebastianhodapp</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ifttt Button</h1>
+        <p>Wifi Button to trigger IFTTT receipts.</p>
+
+        <p class="view"><a href="https://github.com/sebastianhodapp/IFTTT_Button">View the Project on GitHub <small>sebastianhodapp/IFTTT_Button</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/sebastianhodapp/IFTTT_Button/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/sebastianhodapp/IFTTT_Button/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/sebastianhodapp/IFTTT_Button">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h3>
+
+<p>The IFTTT Button is a simple hardware button, based on an ESP8266 and Arduino code to trigger receipts in <a href="http://www.ifttt.com">IFTTT</a>. With this popular webservice, which supports more than 290 channels, it's easy to create own rules (so called receipts) to automate tasks and make different services and devices talk to each other in the IoT.</p>
+
+<p>The IFTTT Button support the call of two different events depending whether you press the button long or short-</p>
+
+<h3>
+<a id="hardware" class="anchor" href="#hardware" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hardware</h3>
+
+<p>If you do not want to tinker much, you can use the ESP8266-board from <a href="http://www.wemos.cc">WeMos.cc</a> and the corresponding 1-Button-Shield. Connect power via USB-Cable and you're done. With a footprint of just 2,5x3,5cm and a height of ~2cm you can make it fit whereever you want. Ordered via <a href="http://de.aliexpress.com/store/1331105">Aliexpress</a> in China you only have to pay 4$ for the ESP8266 module pluss 0,99$ for the button shield.</p>
+
+<p>Stack the shield onto the ESP8266 module. The only thing you need to make sure is that you do this in the right orientation. There's a white dot in the lower right corner of each layer which marks the direction. Make sure that those are above each other.</p>
+
+<h3>
+<a id="upload-code" class="anchor" href="#upload-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Upload Code</h3>
+
+<p>Connect the ESP8266 module via USB to your computer and upload the sketch as you're used to via your Arduino IDE. If you need any support and guidance how to make Arduino work with ESP8266 have a look here <a href="https://github.com/esp8266/Arduino">https://github.com/esp8266/Arduino</a>.</p>
+
+<p>There is no further modification of the sourcecode needed. All configuration can be done via a webbrowser.</p>
+
+<h3>
+<a id="create-your-ifttt-receipt" class="anchor" href="#create-your-ifttt-receipt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create your IFTTT receipt</h3>
+
+<p>Logon (or create a new account) and create a receipt. TBD</p>
+
+<h3>
+<a id="configure-and-connect-your-wifi-button" class="anchor" href="#configure-and-connect-your-wifi-button" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configure and connect your WiFi Button</h3>
+
+<ul>
+<li>The first time you power up the IFTTT Button you need to maintain the WiFi credentials as well as the IFTTT Key. Use a laptop or mobile and search for a WiFi named "ESP#######" (###### is a random number).</li>
+<li>Connect to this network and open the IP <a href="192.168.4.1">192.168.4.1</a> via a webbrowser.</li>
+<li>Scan for available network or select the manual maintenance</li>
+<li>Enter WiFi credentials and the IFTTT key.</li>
+<li>Press Save
+The IFTTT Button should automatically store your input and reboot. If the blue LED is solid, the IFTTT Button is successfully connected to your WiFi. If the LED continues to blink, it didn't make it. Try and repeat the configuration again.</li>
+</ul>
+
+<p>If everything went fine and the LED is solid you should be able to press the button (long or short) and either see the result and action of your receipt or at least be able to get an entry in the receipt log.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/sebastianhodapp">sebastianhodapp</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
